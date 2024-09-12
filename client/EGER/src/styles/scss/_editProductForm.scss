@@ -1,0 +1,120 @@
+@import './_changeable';
+@import './_mixins';
+@import "./_templates";
+
+.edit {
+
+    // .edit__product-form
+
+    &__product-form {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        width: 90%;
+        position: absolute;
+        background: $back-title-color-hover;
+        padding: 2rem;
+        border-radius: 20px;
+    }
+}
+
+.product {
+
+    &__form-title{
+        text-align: center;
+        color: $whitesmoke;
+        font-size: 3rem;
+        
+    }
+    // .product__form-name
+
+    &__form-name {
+        @extend %form;
+        textarea {
+        margin-left: 3rem;
+        }
+    }
+
+    &__form-price {
+        @extend %form;
+        input{
+            margin-left: 5rem;
+        }
+    }
+
+    // .product__form-input
+
+    &__form-input {
+        float: right;
+        width: 80%;
+        padding: 10px;
+        font-size: 1.5rem;
+        border-radius: 5px;
+    }
+
+    // .product__form-images
+
+    &__form-images {
+        @extend %form;
+    }
+
+    // .product__form-imginput
+
+    &__form-imginput {
+        margin-left: 40%;
+        padding-right: 2rem;
+    }
+
+    // .product__form-description
+
+    &__form-description {
+        @extend %form;
+        textarea {
+            margin-left: 3rem;
+        }
+    }
+
+    // .product__form-inputdescription
+
+    &__form-inputdescription {
+        float: right;
+        width: 80%;
+        padding: 10px;
+        font-size: 1.5rem;
+        border-radius: 5px;
+
+    }
+
+    // .product__form-list
+
+    &__form-list {
+        @extend %form;
+        white-space: normal;
+    }
+
+    // .product__form-btn
+
+    &__form-btn {
+        width: 25rem;
+        height: 4rem;
+        margin: 1rem auto;
+        border-radius: 10px;
+        background-color: $buy-btn-bg;
+        color: $whitesmoke;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+        &:hover{
+            background-color: $buy-btn-bg-hover;
+            color: $back-title-color;
+        }
+    }
+}
+
+.product__clear-btn{
+    background-color: $red;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: $whitesmoke;
+    font-size: 1rem;
+}
