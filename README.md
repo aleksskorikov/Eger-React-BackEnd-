@@ -51,3 +51,8 @@ Eger — это интернет-магазин, разработанный с �
 
 ```bash
 git clone https://github.com/aleksskorikov/Eger-React-BackEnd-.git
+cd server
+npm run dev
+cd client
+cd eger
+npm run dev
